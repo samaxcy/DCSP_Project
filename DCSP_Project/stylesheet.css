@@ -1,0 +1,53 @@
+* {
+  font-family: "Tahoma";
+}
+
+#name {
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+#name a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-default  {
+  background-color: #660000;
+  color: white;
+  border: #660000;
+  border-radius: 0;
+}
+
+.nav.navbar-nav.navbar-left li a {
+    text-decoration: none;
+    color: white;
+}
+
+#header {
+  z-index: 1;
+  position: relative;
+  height: 60px;
+  width: 100%;
+  margin-top: -20px;
+  background-color: #46494C;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #46494C;
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.label-align label {
+    display: inline-block;
+    text-align: left;
+    width: 110px;
+}
