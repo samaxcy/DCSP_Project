@@ -33,10 +33,10 @@
 
         <div>
             <legend>Session</legend><br />
-            <input type="radio" name="session" value="DigitalDivas1">Bulldog Bytes Digital Divas I<br />
-            <input type="radio" name="session" value="DigitalDivas2">Bulldog Bytes Digital Divas II<br />
-            <input type="radio" name="session" value="CyberDawgs1">Bulldog Bytes Cyber Dawgs I<br />
-            <input type="radio" name="session" value="CyberDawgs2">Bulldog Bytes Cyber Dawgs II<br />
+            <input type="radio" id="pSession" name="pSession" value="DigitalDivas1">Bulldog Bytes Digital Divas I<br />
+            <input type="radio" id="pSession" name="pSession" value="DigitalDivas2">Bulldog Bytes Digital Divas II<br />
+            <input type="radio" id="pSession" name="pSession" value="CyberDawgs1">Bulldog Bytes Cyber Dawgs I<br />
+            <input type="radio" id="pSession" name="pSession" value="CyberDawgs2">Bulldog Bytes Cyber Dawgs II<br />
         </div>
 
         <br />
@@ -46,38 +46,38 @@
               <legend>Participant Information</legend>
           <div class="label-align">
              <label for="firstname">First Name:</label>
-             <input type="text" title="First Name" id="firstname" placeholder="First Name"/><br />
+             <input type="text" title="First Name" id="pFirstName" name="pFirstName" placeholder="First Name"/><br />
              <label for="firstname">Last Name:</label>
-             <input type="text" title="Last Name" id="lastname" placeholder="Last Name"/><br />
+             <input type="text" title="Last Name" id="pLastName" name="pLastName" placeholder="Last Name"/><br />
           </div>
           
           <br>
           
           <div class="label-align">
              <label for="email">Email Address:</label>
-             <input type="text" id="email" placeholder="Email"/><br />
+             <input type="text" id="pEmail" name="pEmail" placeholder="Email"/><br />
           </div>
 
           <br>
           
           <div class="label-align">
              <label for="address">Address:</label>
-             <input type="text" id="address" placeholder="Address"/><br />
+             <input type="text" id="pAddress" name="pAddress" placeholder="Address"/><br />
              <label for="city">City:</label>
-             <input type="text" id="city" placeholder="City"/><br />
+             <input type="text" id="pCity" name="pCity" placeholder="City"/><br />
              <label for="state">State:</label>
-             <input type="text" id="state" placeholder="State"/><br />
+             <input type="text" id="pState" name="pState" placeholder="State"/><br />
              <label for="zipCode">Zip Code:</label>
-             <input type="text" id="zipCode" placeholder="ZIP"/><br />
+             <input type="text" id="pZipCode" name="pZipCode" placeholder="ZIP"/><br />
           </div>
           
           <br>
           
           <div class="label-align">
              <label for="age">Age:</label>
-             <input type="text" id="age" placeholder="Age"/><br />
+             <input type="text" id="pAge" name="pAge" placeholder="Age"/><br />
              <label for="dateOfBirth">Date of Birth:</label>
-             <input type="text" id="age" placeholder="MM/DD/YYYY"/>
+             <input type="text" id="pDOB" name="pDOB" placeholder="MM/DD/YYYY"/>
           </div>
           
           <br>
@@ -97,9 +97,9 @@
           
           <div class="label-align">
               <label for="grade">Grade:</label>
-              <input type="text" id="grade" placeholder="2016-2017 School Year"/><br />
+              <input type="text" id="grade" name="grade" placeholder="2016-2017 School Year"/><br />
               <label for="gpa">GPA:</label>
-              <input type="text" id="gpa" placeholder="GPA"/>
+              <input type="text" id="gpa" name="gpa" placeholder="GPA"/>
           </div>
           
           <br>
@@ -134,7 +134,6 @@
             <input type="text" id="parent1Email" placeholder="Email"/><br>
             <label for="parent1Phone">Phone:</label>
             <input type="text" id="parent1Phone" placeholder="Home"/><br>
-            <label for='altParentPhone'>Alternate Phone:</label>
             <input type="text" id="parent1AltPhone" placeholder="Alternate"/><br>
                 
             <br>
@@ -149,7 +148,6 @@
             <input type="text" id="parent1Email" placeholder="Email"/><br>
             <label for="parent1Phone">Phone:</label>
             <input type="text" id="parent1Phone" placeholder="Home"/><br>
-            <label for='altParentPhone'>Alternate Phone:</label>
             <input type="text" id="parent1AltPhone" placeholder="Alternate"/><br>
           </div>
           </fieldset>
@@ -165,8 +163,6 @@
              <input type="text" id="emergencylastName" placeholder="Last Name"/><br>
              <label for="emergencyPhone">Phone:</label>
              <input type="text" id="emergencyPhone" placeholder="Phone"/><br>
-             <label for='altemerPhone'>Alternate Phone:</label>
-             <input type='text' id="altemerPhone" placeholder="Alternate"/><br>
              
             </fieldset>
           </div>
@@ -185,7 +181,7 @@
                   <input type="text" id="schoolZip" placeholder="ZIP"/><br>
               </fieldset>
           </div>
-          <input type="submit" class="btn btn-info" value="Submit" />
+          <input type="submit" class="btn btn-info" name="submitApplication" value="Submit" />
 
           <br><br><br><br><br><br>
     </form>

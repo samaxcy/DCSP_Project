@@ -1,22 +1,30 @@
 <?php
-	require 'connect.php';
+	require ('connect.php');
 
-	if (isset($_POST['email']) && isset($_POST['password'])){
+		if (isset($_POST['submitApplication']))
+		{
 
+			$session = $mysqli->real_escape_string($_POST['pSession']);
+	        $firstname = $mysqli->real_escape_string($_POST['pFirstName']);
+	        $lastname = $mysqli->real_escape_string($_POST['pLastName']);
+	        $email = $mysqli->real_escape_string($_POST['pEmail']);
+	        $address = $mysqli->real_escape_string($_POST['pAddress']);
+			$city = $mysqli->real_escape_string($_POST['pCity']);
+	        $state = $mysqli->real_escape_string($_POST['pState']);
 
-        $firstname = $mysqli->real_escape_string($_POST['firstname']);
-        $lastname = $mysqli->real_escape_string($_POST['lastname']);
-        $email = $mysqli->real_escape_string($_POST['email']);
-        $address = $$mysqli->real_escape_string($_POST['address']);
-		$city = $mysqli->real_escape_string($_POST['city']);
-        $state = $$mysqli->real_escape_string($_POST['state']);
+	        echo "here";
 
-        $query = "INSERT INTO `participant` (p_firstname, p_lastname, p_email, p_address, p_city, p_state) VALUES ('firstname', 'lastname', '$email', '$address', 'city', 'state')"; 
-        $result = $mysqli->query($query);
+	        $query = "INSERT INTO `participant` (p_session, p_firstname, p_lastname, p_email, p_address, p_city, p_state) VALUES ('$session', '$firstname', '$lastname', '$email', '$address', '$city', '$state')"; 
+	        $result = $mysqli->query($query);
 
-        if($result){
-            header("Location: success.php");
+        if($result)
+        {
+            header("Location: applicationSuccess.php");
+        }
 
+        else
+        {
+        	echo "error";
         }
     }
 ?>
