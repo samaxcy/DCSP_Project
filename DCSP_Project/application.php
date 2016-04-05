@@ -134,6 +134,7 @@
             <input type="text" id="parent1Email" placeholder="Email"/><br>
             <label for="parent1Phone">Phone:</label>
             <input type="text" id="parent1Phone" placeholder="Home"/><br>
+            <label for='altParentPhone'>Alternate Phone:</label>
             <input type="text" id="parent1AltPhone" placeholder="Alternate"/><br>
                 
             <br>
@@ -148,6 +149,7 @@
             <input type="text" id="parent1Email" placeholder="Email"/><br>
             <label for="parent1Phone">Phone:</label>
             <input type="text" id="parent1Phone" placeholder="Home"/><br>
+            <label for='altParentPhone'>Alternate Phone:</label>
             <input type="text" id="parent1AltPhone" placeholder="Alternate"/><br>
           </div>
           </fieldset>
@@ -163,6 +165,8 @@
              <input type="text" id="emergencylastName" placeholder="Last Name"/><br>
              <label for="emergencyPhone">Phone:</label>
              <input type="text" id="emergencyPhone" placeholder="Phone"/><br>
+             <label for='altemerPhone'>Alternate Phone:</label>
+             <input type='text' id="altemerPhone" placeholder="Alternate"/><br>
              
             </fieldset>
           </div>
