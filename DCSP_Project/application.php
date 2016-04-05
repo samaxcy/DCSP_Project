@@ -104,10 +104,10 @@
           
           <br>
           
-           <div>
+           <div class="label-align">
             <label for="size">T-Shirt Size:</label><br>
             <label for="size">Youth:</label>
-            <input type="radio" name="size" value="youthXS">S
+            <input type="radio" name="size" value="youthXS">XS
             <input type="radio" name="size" value="youthS">S
             <input type="radio" name="size" value="youthM">M
             <input type="radio" name="size" value="youthL">L
@@ -125,23 +125,30 @@
           <fieldset>
           <div class="label-align">  
             <legend>Parent/Guardian Information</legend>
-            <label for="parent1Name">Parent/Guardian 1 Name:</label>
-            <input type="text" id="parent1Name" /><br>
-            <label for="parent1Phone">Home Phone:</label>
-            <input type="text" id="parent1Phone" /><br>
+            <label for="parent1Name">Parent/Guardian</label><br>
+            <label for="parent1Name">First Name:</label>
+            <input type="text" id="parent1firstName" placeholder="First Name"/><br>
+            <label for="parent1Name">Last Name:</label>
+            <input type="text" id="parent1lastName" placeholder="Last Name"/><br>
             <label for="parent1Email">Email:</label>
-            <input type="text" id="parent1Email" /><br>
-            <label for="parent1AltPhone">Alternate Phone:</label>
-            <input type="text" id="parent1AltPhone" /><br>
+            <input type="text" id="parent1Email" placeholder="Email"/><br>
+            <label for="parent1Phone">Phone:</label>
+            <input type="text" id="parent1Phone" placeholder="Home"/><br>
+            <input type="text" id="parent1AltPhone" placeholder="Alternate"/><br>
                 
-            <label for="parent2Name">Parent/Guardian 2 Name:</label>
-            <input type="text" id="parent2Name" /><br>
-            <label for="parent2Phone">Home Phone:</label>
-            <input type="text" id="parent2Phone" /><br>
-            <label for="parent2Email">Email:</label>
-            <input type="text" id="parent2Email" /><br>
-            <label for="parent2AltPhone">Alternate Phone:</label>
-            <input type="text" id="parent2AltPhone" /><br>
+            <br>
+            <br>
+
+            <label for="parent1Name">Parent/Guardian</label><br>
+            <label for="parent1Name">First Name:</label>
+            <input type="text" id="parent1firstName" placeholder="First Name"/><br>
+            <label for="parent1Name">Last Name:</label>
+            <input type="text" id="parent1lastName" placeholder="Last Name"/><br>
+            <label for="parent1Email">Email:</label>
+            <input type="text" id="parent1Email" placeholder="Email"/><br>
+            <label for="parent1Phone">Phone:</label>
+            <input type="text" id="parent1Phone" placeholder="Home"/><br>
+            <input type="text" id="parent1AltPhone" placeholder="Alternate"/><br>
           </div>
           </fieldset>
 
@@ -150,10 +157,12 @@
           <div class="label-align">
             <fieldset>
                 <legend>Emergency Contact(Other Than Parent/Guardian)</legend>
-             <label for="emergencyName">Name:</label>
-             <input type="text" id="emergencyName" /><br>
+             <label for="emergencyfirstName">First Name:</label>
+             <input type="text" id="emergencyfirstName" placeholder="First Name"/><br>
+             <label for="emergencylastName">Last Name:</label>
+             <input type="text" id="emergencylastName" placeholder="Last Name"/><br>
              <label for="emergencyPhone">Phone:</label>
-             <input type="text" id="emergencyPhone" /><br>
+             <input type="text" id="emergencyPhone" placeholder="Phone"/><br>
              
             </fieldset>
           </div>
@@ -163,19 +172,17 @@
               <fieldset>
                   <legend>School</legend>
                   <label for="schoolName">Name:</label>
-                  <input type="text" id="schoolName" /><br>
+                  <input type="text" id="schoolName" placeholder="Name"/><br>
                   <label for="schoolCity">City:</label>
-                  <input type="text" id="schoolCity" /><br>
+                  <input type="text" id="schoolCity" placeholder="City"/><br>
                   <label for="schoolState">State:</label>
-                  <input type="text" id="schoolState" /><br>
+                  <input type="text" id="schoolState" placeholder="State"/><br>
                   <label for="schoolZip">Zip:</label>
-                  <input type="text" id="schoolZip" /><br>
+                  <input type="text" id="schoolZip" placeholder="ZIP"/><br>
               </fieldset>
           </div>
 
-          <br>
-          <br>
-          <br>
+          <br><br><br><br><br><br>
     </form>
 </div>
 <div class="col-lg-3 col-md-3"></div>
