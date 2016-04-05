@@ -29,7 +29,7 @@
 <div class="col-lg-3 col-md-3"></div>
 <div class="col-lg-6 col-md-6">
     <legend><h1>Bulldog Bytes Application</h1></legend> <br /><br />
-    <form action="register.php" method="post" class="form-inline"> 
+    <form action="submitApplication.php" method="post" class="form-inline"> 
 
         <div>
             <legend>Session</legend><br />
@@ -55,20 +55,20 @@
           
           <div class="label-align">
              <label for="email">Email Address:</label>
-             <input class="input-align" type="text" id="email" placeholder="Email"/><br />
+             <input type="text" id="email" placeholder="Email"/><br />
           </div>
 
           <br>
           
           <div class="label-align">
              <label for="address">Address:</label>
-             <input class="input-align" type="text" id="address" placeholder="Address"/><br />
+             <input type="text" id="address" placeholder="Address"/><br />
              <label for="city">City:</label>
-             <input class="input-align" type="text" id="city" placeholder="City"/><br />
+             <input type="text" id="city" placeholder="City"/><br />
              <label for="state">State:</label>
-             <input class="input-align" type="text" id="state" placeholder="State"/><br />
+             <input type="text" id="state" placeholder="State"/><br />
              <label for="zipCode">Zip Code:</label>
-             <input class="input-align" type="text" id="zipCode" placeholder="ZIP"/><br />
+             <input type="text" id="zipCode" placeholder="ZIP"/><br />
           </div>
           
           <br>
@@ -181,6 +181,7 @@
                   <input type="text" id="schoolZip" placeholder="ZIP"/><br>
               </fieldset>
           </div>
+          <input type="submit" class="btn btn-info" value="Submit" />
 
           <br><br><br><br><br><br>
     </form>

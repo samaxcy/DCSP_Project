@@ -2,7 +2,7 @@
 
 	$dbusername = "root";
 	$dbpassword = "";
-	$dbname = "bulldogbytesdb";
+	$dbname = "test2";
 	$dbhostname = "localhost";
 
 $mysqli = new mysqli($dbhostname, $dbusername, $dbpassword, $dbname);

@@ -34,7 +34,7 @@
     <div class="col-lg-6 col-md-6">
         <legend><h1>Register</h1></legend> <br /><br />
         <form action="doregister.php" method="post" class="form"> 
-            <div>
+ <!--           <div>
                 <label>First Name:</label> <br />
                 <input type="text" title="First Name" id="firstname" name="firstname" class="form-control" 
                     placeholder="First Name" /> <br /> <br />
@@ -45,7 +45,7 @@
                 <input type="text" title="Last Name" id="lastname" name="lastname" class="form-control" 
                     placeholder="Last Name" /> <br /> <br />
             </div>
-            
+   -->         
 
             <div>
                 <label>Email Address:</strong></label> <br />
