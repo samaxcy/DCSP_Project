@@ -2,7 +2,9 @@
     require('connect.php');
     // If the values are posted, insert them into the database.
     error_reporting(0);
-    if (isset($_POST['email']) && isset($_POST['password'])){
+
+    if (isset($_POST['email']) && isset($_POST['password']) && $_POST['email'] != null && $_POST['password'])
+    {
 
 
         //$firstname = $mysqli->real_escape_string($_POST['firstname']);
@@ -20,5 +22,10 @@
             header("Location: success.php");
 
         }
+    }
+
+    else 
+    {
+        echo "<h1>Error</h1>";
     }
     ?>

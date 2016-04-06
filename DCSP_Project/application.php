@@ -134,6 +134,7 @@
             <input type="text" id="parent1Email" placeholder="Email"/><br>
             <label for="parent1Phone">Phone:</label>
             <input type="text" id="parent1Phone" placeholder="Home"/><br>
+            <label for="parent1AltPhone">Alternate Phone:</label>
             <input type="text" id="parent1AltPhone" placeholder="Alternate"/><br>
                 
             <br>
@@ -148,6 +149,7 @@
             <input type="text" id="parent1Email" placeholder="Email"/><br>
             <label for="parent1Phone">Phone:</label>
             <input type="text" id="parent1Phone" placeholder="Home"/><br>
+            <label for="parent1AltPhone">Alternate Phone:</label>
             <input type="text" id="parent1AltPhone" placeholder="Alternate"/><br>
           </div>
           </fieldset>
