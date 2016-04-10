@@ -6,6 +6,28 @@
     <!DOCTYPE html>
     <html>
     <head>
+    <script>
+    function validateForm() {
+        var errMessage = "";
+        var validation = true;
+        var x = document.forms["register"]["email"].value;
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (x == null || x == "" || !re.test(x)) {
+            errMessage += "You must give a valid email.\n";
+            validation = false;
+        }
+        var x = document.forms['register']['password'].value;
+        if (x==null || x==""){
+            errMessage += "You must enter a password.\n"
+            validation = false;
+        }
+        if (!validation) {
+            alert(errMessage);
+            return validation
+        }   
+        return validation
+    }
+    </script>
         <title>Register</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,20 +55,7 @@
     <div class="col-lg-3 col-md-3"></div>
     <div class="col-lg-6 col-md-6">
         <legend><h1>Register</h1></legend> <br /><br />
-        <form action="doregister.php" method="post" class="form"> 
- <!--           <div>
-                <label>First Name:</label> <br />
-                <input type="text" title="First Name" id="firstname" name="firstname" class="form-control" 
-                    placeholder="First Name" /> <br /> <br />
-            </div>
-            
-            <div>
-                <label>Last Name:</label> <br />
-                <input type="text" title="Last Name" id="lastname" name="lastname" class="form-control" 
-                    placeholder="Last Name" /> <br /> <br />
-            </div>
-   -->         
-
+        <form action="doregister.php" name='register' onsubmit="return validateForm()" method="post" class="form"> 
             <div>
                 <label>Email Address:</strong></label> <br />
                 <input type="text" title="Email" id="email" name="email" class="form-control" 
