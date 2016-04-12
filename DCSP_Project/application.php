@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -86,7 +90,7 @@
       errMessage += "You must give Parent 1's last name.\n";
       validation = false;
     }
-    var x = document.forms["application"]["parent1Email"].value;
+   /* var x = document.forms["application"]["parent1Email"].value;
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (x == null || x == "" || !re.test(x)) {
       errMessage += "You must give Parent 1's valid email.\n";
@@ -97,7 +101,7 @@
     if (x == null || x == "" || !re.test(x)) {
       errMessage += "You must give Parent 1's valid phone number.\n";
       validation = false;
-    }
+    }*/
     var x = document.forms["application"]["parent2FirstName"].value;
     if (x == null || x == "") {
       errMessage += "You must give Parent 2's first name.\n";
@@ -217,7 +221,7 @@ return true;
         <ul class="nav navbar-nav navbar-left">
             <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="application.php"><span class="glyphicon glyphicon-certificate"></span> Apply</a></li>
-            <li><a href="login.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
     </div>
 </nav>
