@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <ul class="nav navbar-nav navbar-left">
             <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="application.php"><span class="glyphicon glyphicon-certificate"></span> Apply</a></li>
+            <li><a href="register.php"><span class="glyphicon glyphicon-certificate"></span> Register</a></li>
             <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
     </div>

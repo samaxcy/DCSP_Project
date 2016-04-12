@@ -235,10 +235,10 @@ return true;
 
         <div>
             <legend>Session</legend><br />
-            <input type="radio" id="pSession" name="pSession" value="DigitalDivas1">Bulldog Bytes Digital Divas I<br />
-            <input type="radio" id="pSession" name="pSession" value="DigitalDivas2">Bulldog Bytes Digital Divas II<br />
-            <input type="radio" id="pSession" name="pSession" value="CyberDawgs1">Bulldog Bytes Cyber Dawgs I<br />
-            <input type="radio" id="pSession" name="pSession" value="CyberDawgs2">Bulldog Bytes Cyber Dawgs II<br />
+            <input type="radio" id="pSession" name="pSession" value="Digital Divas 1">Bulldog Bytes Digital Divas I<br />
+            <input type="radio" id="pSession" name="pSession" value="Digital Divas 2">Bulldog Bytes Digital Divas II<br />
+            <input type="radio" id="pSession" name="pSession" value="Cyber Dawgs 1">Bulldog Bytes Cyber Dawgs I<br />
+            <input type="radio" id="pSession" name="pSession" value="Cyber Dawgs 2">Bulldog Bytes Cyber Dawgs II<br />
         </div>
 
         <br />
@@ -287,13 +287,13 @@ return true;
 
           <div>
               <label for="race">Race/Ethnicity (check all that apply):</label><br>
-              <input type="checkbox" name="race" value="asian_pacific">Asian/Pacific Islander<br />
-              <input type="checkbox" name="race" value="black">Black<br>
-              <input type="checkbox" name="race" value="hispanic">Hispanic<br />
-              <input type="checkbox" name="race" value="nativeAmerican">Native American/Eskimo/Aleut<br>
-              <input type="checkbox" name="race" value="white">White<br />
-              <input type="checkbox" name="race" value="other">Other<br />
-              <input type="checkbox" name="race" value="no response">Prefer Not to Respond<br>
+              <input type="checkbox" name="race" value="Asian/Pacific Islander">Asian/Pacific Islander<br />
+              <input type="checkbox" name="race" value="Black">Black<br>
+              <input type="checkbox" name="race" value="Hispanic">Hispanic<br />
+              <input type="checkbox" name="race" value="Native American">Native American/Eskimo/Aleut<br>
+              <input type="checkbox" name="race" value="White">White<br />
+              <input type="checkbox" name="race" value="Other">Other<br />
+              <input type="checkbox" name="race" value="No Response">Prefer Not to Respond<br>
           </div>
           
           <br>
@@ -310,17 +310,17 @@ return true;
            <div class="label-align">
             <label for="size">T-Shirt Size:</label><br>
             <label for="size">Youth:</label>
-            <input type="radio" name="size" value="youthXS">XS
-            <input type="radio" name="size" value="youthS">S
-            <input type="radio" name="size" value="youthM">M
-            <input type="radio" name="size" value="youthL">L
-            <input type="radio" name="size" value="youthXL">XL<br>
+            <input type="radio" name="size" value="Youth XS">XS
+            <input type="radio" name="size" value="Youth S">S
+            <input type="radio" name="size" value="Youth M">M
+            <input type="radio" name="size" value="Youth L">L
+            <input type="radio" name="size" value="Youth XL">XL<br>
             <label for="size">Adult:</label>
-            <input type="radio" name="size" value="adultS">S
-            <input type="radio" name="size" value="adultM">M
-            <input type="radio" name="size" value="adultL">L
-            <input type="radio" name="size" value="adultXL">XL
-            <input type="radio" name="size" value="adultXXL">XXL
+            <input type="radio" name="size" value="Adult S">S
+            <input type="radio" name="size" value="Adult M">M
+            <input type="radio" name="size" value="Adult L">L
+            <input type="radio" name="size" value="Adult XL">XL
+            <input type="radio" name="size" value="Adult XXL">XXL
           </div>
           </fieldset> 
 

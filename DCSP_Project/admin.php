@@ -30,7 +30,7 @@
         echo '<div class="container-fluid">';
           echo '<ul class="nav navbar-nav navbar-left">';
             echo '<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>';
-            echo '<li><a href="application.php"><span class="glyphicon glyphicon-certificate"></span> Apply</a></li>';
+            echo '<li><a href="admin.php"><span class="glyphicon glyphicon-certificate"></span> View Applicants</a></li>';
             echo '<li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>';
           echo '</ul>';
         echo '</div>';
@@ -68,8 +68,8 @@
     <th>Last Name</th>
     <th>Email</th>
     <th>Age</th>
-    <th>DOB</th>
-    <th>Race</th>
+    <!--<th>DOB</th>-->
+    <!--<th>Race</th>-->
     <th>Grade</th>
     <th>GPA</th>
     <th>T-Shrit Size</th>
@@ -83,8 +83,8 @@
       <td><?php echo $row["l_name"]; ?></td>
       <td><?php echo $row["email"]; ?></td>
       <td><?php echo $row["age"]; ?></td>
-      <td><?php echo $row["dob"]; ?></td>
-      <td><?php echo $row["race"]; ?></td>
+      <!--<td><?php echo $row["dob"]; ?></td>-->
+      <!--<td><?php echo $row["race"]; ?></td>-->
       <td><?php echo $row["grade"]; ?></td>
       <td><?php echo $row["GPA"]; ?></td>
       <td><?php echo $row["tshirt"]; ?></td>

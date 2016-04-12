@@ -20,7 +20,7 @@
         <ul class="nav navbar-nav navbar-left">
             <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="application.php"><span class="glyphicon glyphicon-certificate"></span> Apply</a></li>
-            <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
         </ul>
     </div>
 </nav>

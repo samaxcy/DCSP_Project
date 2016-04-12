@@ -23,7 +23,7 @@ $query = "SELECT * FROM user WHERE  email='$email' AND password='$passHash'" ;
 $result = $mysqli->query($query);
 $row = $result->fetch_assoc();
 
-if($_POST['email'] == 'dcspadmin@admin.com' && $_POST['password'] == 'admin')
+if($_POST['email'] == 'admin@msstate.com' && $_POST['password'] == 'admin')
 {
 	session_start();
 	$_SESSION['email'] = $email;

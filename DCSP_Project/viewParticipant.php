@@ -36,20 +36,6 @@
 	$sql3 = "SELECT * FROM parent WHERE parentID ='$id'";
 	$result3 = $mysqli->query($sql3);
 
-	/*while ($row = $result3->fetch_assoc()) 
-	{
-		echo $row["sess"] . '<br>'; 
-		echo $row["f_name"] . '<br>';
-		echo $row["l_name"] . '<br>';
-		echo $row["email"] . '<br>';
-		echo $row["age"] . '<br>';
-		echo $row["dob"] . '<br>';
-		echo $row["race"] . '<br>';
-		echo $row["grade"] . '<br>';
-		echo $row["GPA"] . '<br>';
-		echo $row["tshirt"] . '<br>';
-	}*/
-
 	$sql4 = "SELECT * FROM emergency WHERE emergencyID ='$id'";
 	$result4 = $mysqli->query($sql4);
 
@@ -61,8 +47,8 @@
 	<div class="container-fluid">
 		<ul class="nav navbar-nav navbar-left">
 			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Register</a></li>
-            <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="admin.php"><span class="glyphicon glyphicon-user"></span> View Applicant</a></li>
+            <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 		</ul>
 	</div>
 </nav>
@@ -82,7 +68,7 @@
 				<label>Race: </label> <?php echo $row["race"] . '<br>'; ?>
 				<label>Grade: </label> <?php echo $row["grade"] . '<br>'; ?>
 				<label>GPA: </label> <?php echo $row["GPA"] . '<br>'; ?>
-				<label>T-Shirt Size: </label> <?php echo $row["tshirt"] . '<br>'; ?>
+				<label>T-Shirt Size: </label> <?php echo $row["tshirt"] . '<br>' . '<br>'; ?>
 		<?php } ?>
 		</div>
 	</fieldset>
@@ -92,31 +78,30 @@
 				<label>Street Address: </label> <?php echo $row["street"] . '<br>'; ?>
 				<label>City: </label> <?php echo $row["city"] . '<br>'; ?>
 				<label>State: </label> <?php echo $row["state"] . '<br>'; ?>
-				<label>ZIP Code: </label> <?php echo $row["zip"] . '<br>'; ?>
+				<label>ZIP Code: </label> <?php echo $row["zip"] . '<br>' . '<br>'; ?>
 		<?php } ?>
 	</fieldset>
-	<!--<fieldset>
-		<legend>Applicant Information</legend>
+	<fieldset>
 		<div>
-		<?php	//while ($row = $result1->fetch_assoc()) { ?>
-				<label>Session: </label> <?php //echo $row["sess"] . '<br>'; ?>
-				<label>First Name: </label> <?php //echo $row["f_name"] . '<br>'; ?>
-				<label>Last Name: </label> <?php //echo $row["l_name"] . '<br>'; ?>
-				<label>Email: </label> <?php //echo $row["email"] . '<br>'; ?>
-				<label>Age: </label> <?php //echo $row["age"] . '<br>'; ?>
-				<label>DOB: </label> <?php //echo $row["dob"] . '<br>'; ?>
-				<label>Race: </label> <?php //echo $row["race"] . '<br>'; ?>
-				<label>Grade: </label> <?php //echo $row["grade"] . '<br>'; ?>
-				<label>GPA: </label> <?php //echo $row["GPA"] . '<br>'; ?>
-				<label>T-Shirt Size: </label> <?php //echo $row["tshirt"] . '<br>'; ?>
-		<?php// } ?>
+		<?php	while ($row = $result3->fetch_assoc()) { ?>
+				<label>Parent First Name: </label> <?php echo $row["f_name"] . '<br>'; ?>
+				<label>Parent Last Name: </label> <?php echo $row["l_name"] . '<br>'; ?>
+				<label>Parent Email: </label> <?php echo $row["p_email"] . '<br>'; ?>
+				<label>Phone: </label> <?php echo $row["phone1"] . '<br>'; ?>
+				<label>Alternate Phone: </label> <?php echo $row["phone2"] . '<br>'; ?>
+				<label>Parent First Name: </label> <?php echo $row["f_name2"] . '<br>'; ?>
+				<label>Parent Last Name: </label> <?php echo $row["l_name2"] . '<br>'; ?>
+				<label>Parent Email: </label> <?php echo $row["p_email2"] . '<br>'; ?>
+				<label>Phone: </label> <?php echo $row["phone1_2"] . '<br>'; ?>
+				<label>Alternate Phone: </label> <?php echo $row["phone2_2"] . '<br>' . '<br>'; ?>
+		<?php } ?>
 		</div>
-	</fieldset>-->
+	</fieldset>
 	<fieldset>
 		<?php	while ($row = $result4->fetch_assoc()) { ?>
 				<label>First Name: </label> <?php echo $row["f_name"] . '<br>'; ?>
 				<label>Last Name: </label> <?php echo $row["l_name"] . '<br>'; ?>
-				<label>Phone: </label> <?php echo $row["phone"] . '<br>'; ?>
+				<label>Phone: </label> <?php echo $row["phone"] . '<br>' . '<br>'; ?>
 		<?php } ?>
 	</fieldset>
 	<fieldset>
@@ -124,7 +109,7 @@
 				<label>Name: </label> <?php echo $row["school_name"] . '<br>'; ?>
 				<label>City: </label> <?php echo $row["school_city"] . '<br>'; ?>
 				<label>State: </label> <?php echo $row["school_state"] . '<br>'; ?>
-				<label>ZIP Code: </label> <?php echo $row["school_zip"] . '<br>'; ?>
+				<label>ZIP Code: </label> <?php echo $row["school_zip"] . '<br>'  . '<br>' . '<br>' . '<br>'; ?>
 		<?php } ?>
 	</fieldset>
 </div>

@@ -33,7 +33,7 @@
           echo '</ul>';
         echo '</div>';
       echo '</nav>';
-    }    
+    }   
 
     else
     {
@@ -53,7 +53,7 @@
         <legend><h1>Welcome</h1></legend> <br />
         <p>Welcome to Bulldog Bytes!  It is an educational program for young girls who have completed grades 3, 4, and 5.  They will learn computer programming using Snap! and a Finch robot. Through games, girls will learn about the importance of privacy online and the dangers they might encounter when using the Internet.  They will create a web page with internet safety hints that they can share with friends and family.  </p><br />
         <p>To apply, you must register or login using the legend near the top left of the page.</p>
-        <img src="Bulldog_bytes.JPG" style="width:1024px;height:500px;">
+        <!--<img src="Bulldog_bytes.JPG" style="width:1024px;height:500px;">-->
     </div>
     <div class="col-lg-3 col-md-3"></div>
 
