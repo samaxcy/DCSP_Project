@@ -102,9 +102,9 @@
       validation = false;
     }
     var x = document.forms["application"]["parent1Phone"].value;
-    var re = /^[0-9]{10}$/
+    var re = /^[0-9]{10,11}$/
     if (x == null || x == "" || !re.test(x)) {
-      errMessage += "You must give Parent 1's valid phone number.\n";
+      errMessage += "You must give Parent 1's valid 10 or 11 digit phone number.\n";
       validation = false;
     }
     var x = document.forms["application"]["parent2FirstName"].value;
@@ -124,9 +124,9 @@
       validation = false;
     }
     var x = document.forms["application"]["parent2Phone"].value;
-    var re = /^[0-9]{10}$/
+    var re = /^[0-9]{10,11}$/
     if (x == null || x == "" || !re.test(x)) {
-      errMessage += "You must give Parent 2's valid phone number.\n";
+      errMessage += "You must give Parent 2's valid 10 or 11 digit phone number.\n";
       validation = false;
     }
     var x = document.forms["application"]["parent3FirstName"].value;
@@ -140,9 +140,9 @@
       validation = false;
     }
     var x = document.forms["application"]["parent3Phone"].value;
-    var re = /^[0-9]{10}$/
+    var re = /^[0-9]{10,11}$/
     if (x == null || x == "" || !re.test(x)) {
-      errMessage += "You must give an emergency valid phone number.\n";
+      errMessage += "You must give a valid 10 or 11 digit emergency phone number.\n";
       validation = false;
     }
     var x = document.forms["application"]["schoolName"].value;
