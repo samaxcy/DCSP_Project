@@ -69,7 +69,7 @@
       validation = false;
     }
     var x = document.forms["application"]["grade"].value;
-    if (x == null || x == "" || x>2100 || x<2015) {
+    if (x == null || x == "" || x>12 || x<1) {
       errMessage += "You must give a valid grade.\n";
       validation = false;
     }
@@ -307,7 +307,7 @@ return true;
           
           <div class="label-align">
               <label for="grade">Graduation Year:</label>
-              <input type="text" id="grade" name="grade" placeholder="2020"/><br />
+              <input type="text" id="grade" name="grade" placeholder="5-12"/><br />
               <label for="gpa">GPA:</label>
               <input type="text" id="gpa" name="gpa" placeholder="3.50"/>
           </div>
