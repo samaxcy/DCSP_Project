@@ -13,8 +13,12 @@
     {
         errMessage+='Please select a session.\n';
         validation = false;
-    }
-    var x = document.forms["application"]["pFirstName"].value;
+    
+    if (!validateOption(document.forms['application']['gender']))
+    {
+        errMessage+='Please select a gender.\n';
+        validation = false;
+    }    var x = document.forms["application"]["pFirstName"].value;
     if (x == null || x == "") {
       errMessage+="You must give a first name.\n";
       validation = false;
