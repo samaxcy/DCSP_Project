@@ -5,6 +5,7 @@
 		{
 
 			$session = $mysqli->real_escape_string($_POST['pSession']);
+			$gender = $mysqli->real_escape_string($_POST['gender']);
 	        $firstname = $mysqli->real_escape_string($_POST['pFirstName']);
 	        $lastname = $mysqli->real_escape_string($_POST['pLastName']);
 	        $email = $mysqli->real_escape_string($_POST['pEmail']);
@@ -14,6 +15,7 @@
 	        $zip = $mysqli->real_escape_string($_POST['pZipCode']);
 	        $age = $mysqli->real_escape_string($_POST['pAge']);
 	        $dob = $mysqli->real_escape_string($_POST['pDOB']);
+	        $dob = date('Y-m-d', strtotime($dob));
 	        $race = $mysqli->real_escape_string($_POST['race']);
 	        $grade = $mysqli->real_escape_string($_POST['grade']);
 	        $gpa = $mysqli->real_escape_string($_POST['gpa']);
@@ -39,8 +41,8 @@
 	        $schoolState = $mysqli->real_escape_string($_POST['schoolState']);
 	        $schoolZip = $mysqli->real_escape_string($_POST['schoolZipCode']);
 
-	        $query = "INSERT INTO `participant` (sess, f_name, l_name, email, age, dob, race, grade, GPA, tshirt)
-	        		 VALUES ('$session', '$firstname', '$lastname', '$email', '$age', '$dob', '$race', '$grade', '$gpa', '$tshirt')"; 
+	        $query = "INSERT INTO `participant` (sess, gender, f_name, l_name, email, age, dob, race, grade, GPA, tshirt)
+	        		 VALUES ('$session', '$gender', '$firstname', '$lastname', '$email', '$age', '$dob', '$race', '$grade', '$gpa', '$tshirt')"; 
 	        $result = $mysqli->query($query);
 
 	        $query = "INSERT INTO `address` (street, city, state, zip)

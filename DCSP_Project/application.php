@@ -247,6 +247,9 @@ return true;
         <fieldset>
               <legend>Participant Information</legend>
           <div class="label-align">
+             <label for="gender">Gender:</label>
+             <input type="radio" id="gender" name="gender" value="Male">Male</input>
+             <input type="radio" id="gender" name="gender" value="Female">Female</input><br>
              <label for="firstname">First Name:</label>
              <input type="text" title="First Name" id="pFirstName" name="pFirstName" placeholder="First Name"/><br />
              <label for="firstname">Last Name:</label>
@@ -386,6 +389,21 @@ return true;
                   <input type="text" id="schoolZip" name="schoolZipCode" placeholder="ZIP"/><br>
               </fieldset>
           </div>
+
+          <br>
+          <div class="label-align">
+            <legend><h1>Section II - Personal Information</h1></legend>
+              <p>
+                Please tell us about yourself including your interests (academic and non‐academic) as well as
+                why you wish to attend this program. What do you expect to learn from attending Bulldog
+                Bytes? We are also interested in your plans for college and career. Where do you intend to
+                attend college and what major are you most interested in? Please remember to clearly print or
+                type your responses.
+              </p> <br /><br /><br><br>
+
+              <label for="response"></label>
+          </div>
+
           <input type="submit" class="btn btn-info" name="submitApplication" value="Submit" />
 
           <br><br><br><br><br><br>

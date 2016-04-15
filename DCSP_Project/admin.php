@@ -79,7 +79,7 @@
     <tr>
       <td><?php echo $id; ?></td>
       <td><?php echo $row["sess"]; ?></td>
-      <td><?php echo ('<a href="viewParticipant.php?id= ' . $id . '">' . $row["f_name"] . '</a>'); ?></td>
+      <td><?php echo ('<a href="viewApplicant.php?id= ' . $id . '">' . $row["f_name"] . '</a>'); ?></td>
       <td><?php echo $row["l_name"]; ?></td>
       <td><?php echo $row["email"]; ?></td>
       <td><?php echo $row["age"]; ?></td>
