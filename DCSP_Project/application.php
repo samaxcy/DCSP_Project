@@ -13,12 +13,13 @@
     {
         errMessage+='Please select a session.\n';
         validation = false;
-    
+    }
     if (!validateOption(document.forms['application']['gender']))
     {
         errMessage+='Please select a gender.\n';
         validation = false;
-    }    var x = document.forms["application"]["pFirstName"].value;
+    }
+    var x = document.forms["application"]["pFirstName"].value;
     if (x == null || x == "") {
       errMessage+="You must give a first name.\n";
       validation = false;
@@ -69,12 +70,12 @@
       validation = false;
     }
     var x = document.forms["application"]["grade"].value;
-    if (x == null || x == "" || x>12 || x<1) {
+    if (x == null || x == "" || x>12 || x<5) {
       errMessage += "You must give a valid grade.\n";
       validation = false;
     }
     var x = document.forms["application"]["gpa"].value;
-    var re = /^[0-4]{1}\.[0-9]{2}$/
+    var re = /^[0-4]{1}\.[0-9]{1,2}$/
     if (x == null || x == "" || !re.test(x)) {
       errMessage += "You must give a valid GPA.\n";
       validation = false;
@@ -86,7 +87,7 @@
     }
     var x = document.forms["application"]["parent1FirstName"].value;
     if (x == null || x == "") {
-      errMessage += "You must give Parent 1'sfirst name.\n";
+      errMessage += "You must give Parent 1's first name.\n";
       validation = false;
     }
     var x = document.forms["application"]["parent1LastName"].value;
@@ -206,8 +207,8 @@ return true;
 }
 </script>
 
-	<title>Apply</title>
-	<meta charset="utf-8">
+  <title>Apply</title>
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -306,8 +307,8 @@ return true;
           <br>
           
           <div class="label-align">
-              <label for="grade">Graduation Year:</label>
-              <input type="text" id="grade" name="grade" placeholder="5-12"/><br />
+              <label for="grade">Grade (5-12):</label>
+              <input type="text" id="grade" name="grade" placeholder="7"/><br />
               <label for="gpa">GPA:</label>
               <input type="text" id="gpa" name="gpa" placeholder="3.50"/>
           </div>
@@ -350,17 +351,17 @@ return true;
             <br>
             <br>
 
-            <label for="parent2Name">Parent/Guardian</label><br>
-            <label for="parent2Name">First Name:</label>
-            <input type="text" id="parent2firstName" name="parent2FirstName" placeholder="First Name"/><br>
-            <label for="parent2Name">Last Name:</label>
-            <input type="text" id="parent2lastName" name="parent2LastName" placeholder="Last Name"/><br>
+            <label for="parent1Name">Parent/Guardian</label><br>
+            <label for="parent1Name">First Name:</label>
+            <input type="text" id="parent1firstName" name="parent2FirstName" placeholder="First Name"/><br>
+            <label for="parent1Name">Last Name:</label>
+            <input type="text" id="parent1lastName" name="parent2LastName" placeholder="Last Name"/><br>
             <label for="parent2Email">Email:</label>
             <input type="text" id="parent2Email" name="parent2Email" placeholder="Email"/><br>
             <label for="parent2Phone">Phone:</label>
             <input type="text" id="parent2Phone" name="parent2Phone" placeholder="Home"/><br>
-            <label for="parent2AltPhone">Alternate Phone*:</label>
-            <input type="text" id="parent2AltPhone" name="parent2AltPhone" placeholder="Alternate"/><br>
+            <label for="parent1AltPhone">Alternate Phone*:</label>
+            <input type="text" id="parent1AltPhone" name="parent2AltPhone" placeholder="Alternate"/><br>
           </div>
           </fieldset>
 
