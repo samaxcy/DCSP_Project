@@ -90,7 +90,7 @@
       errMessage += "You must give Parent 1's last name.\n";
       validation = false;
     }
-   /* var x = document.forms["application"]["parent1Email"].value;
+    var x = document.forms["application"]["parent1Email"].value;
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (x == null || x == "" || !re.test(x)) {
       errMessage += "You must give Parent 1's valid email.\n";
@@ -101,7 +101,7 @@
     if (x == null || x == "" || !re.test(x)) {
       errMessage += "You must give Parent 1's valid phone number.\n";
       validation = false;
-    }*/
+    }
     var x = document.forms["application"]["parent2FirstName"].value;
     if (x == null || x == "") {
       errMessage += "You must give Parent 2's first name.\n";
@@ -346,17 +346,17 @@ return true;
             <br>
             <br>
 
-            <label for="parent1Name">Parent/Guardian</label><br>
-            <label for="parent1Name">First Name:</label>
-            <input type="text" id="parent1firstName" name="parent2FirstName" placeholder="First Name"/><br>
-            <label for="parent1Name">Last Name:</label>
-            <input type="text" id="parent1lastName" name="parent2LastName" placeholder="Last Name"/><br>
-            <label for="parent1Email">Email:</label>
-            <input type="text" id="parent1Email" name="parent2Email" placeholder="Email"/><br>
-            <label for="parent1Phone">Phone:</label>
-            <input type="text" id="parent1Phone" name="parent2Phone" placeholder="Home"/><br>
-            <label for="parent1AltPhone">Alternate Phone*:</label>
-            <input type="text" id="parent1AltPhone" name="parent2AltPhone" placeholder="Alternate"/><br>
+            <label for="parent2Name">Parent/Guardian</label><br>
+            <label for="parent2Name">First Name:</label>
+            <input type="text" id="parent2firstName" name="parent2FirstName" placeholder="First Name"/><br>
+            <label for="parent2Name">Last Name:</label>
+            <input type="text" id="parent2lastName" name="parent2LastName" placeholder="Last Name"/><br>
+            <label for="parent2Email">Email:</label>
+            <input type="text" id="parent2Email" name="parent2Email" placeholder="Email"/><br>
+            <label for="parent2Phone">Phone:</label>
+            <input type="text" id="parent2Phone" name="parent2Phone" placeholder="Home"/><br>
+            <label for="parent2AltPhone">Alternate Phone*:</label>
+            <input type="text" id="parent2AltPhone" name="parent2AltPhone" placeholder="Alternate"/><br>
           </div>
           </fieldset>
 
